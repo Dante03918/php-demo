@@ -1,0 +1,17 @@
+{
+	"type": "composer-plugin",
+	"name": "heroku/installer-plugin",
+	"version": "1.6.0",
+	"autoload": {
+		"psr-4": {
+			"Heroku\\Buildpack\\PHP\\": "src/"
+		}
+	},
+	"extra": {
+		"class": "Heroku\\Buildpack\\PHP\\ComposerInstallerPlugin",
+		"plugin-modifies-downloads": true
+	},
+	"require": {
+		"composer-plugin-api": "^2.0.0"
+	}
+}
